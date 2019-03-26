@@ -32,18 +32,20 @@
     <string name="txtServife">Servi-Fe</string>
     <string name="telServife">+54 3445 482400</string>
 
+    <!--Atractivos-->
     <string name="txtAtractivos">Atractivos</string>
-    <string name="txtTermas">Termas de \nBasavilbaso</string>
-    <string name="txtDirTermas">Ruta 20 \nKm. 93</string>
-    <string name="txtCircuito">Circuito de las \nColonias Judías</string>
+    <string name="txtTermas">Termas de\nBasavilbaso</string>
+    <string name="txtDirTermas">Ruta 20 Km. 93</string>
+    <string name="txtCircuito">Circuito de las\nColonias Judías</string>
     <string name="txtDirCircuito">Asociación \nIsraelita</string>
-    <string name="txtMuseoFerroviario">Museo \n Ferroviario</string>
+    <string name="txtMuseoFerroviario">Museo \nFerroviario</string>
     <string name="txtDirMuseoFerroviario">Podesta \ne I. Neyra</string>
     <string name="txtMuseoHistórico">Museo Histórico \nRegional</string>
     <string name="txtDirMuseoHistorico">Av. Pte Peron \ny Av. San Martín</string>
-    <string name="txtCasaMuseo">Casa Museo \n"La Posta del Aviador"</string>
+    <string name="txtCasaMuseo">Casa Museo \n\"La Posta del\nAviador\"</string>
     <string name="txtDirCasaMuseo">Quiróz 569</string>
 
+    <!--Alojamientos-->
     <string name="txtAlojamientos">Alojamientos</string>
 
     <string name="txtHotel5Soles">Hotel \"5 Soles\"</string>
@@ -91,7 +93,8 @@
     <!--Fotos-->
     <string name="txtFotoPoli">Polidep. Gral. San Martín</string>
     <string name="txtFotoMusHist">Museo Historico Regional</string>
-    <string name="txtMusFerro">Museo Ferroviario</string>
-    <string name="txtSinMoises">Sinagoga T L\' Moises</string>
-    <string name="txtSinNov">Sinagoga Novibuco</string>
+    <string name="txtFotoMusFerro">Museo Ferroviario</string>
+    <string name="txtFotoSinMoises">Sinagoga T L\' Moises</string>
+    <string name="txtFotoSinNov">Sinagoga Novibuco</string>
+    <string name="txtFotoTermas">Termas de Basavilbaso</string>
 </resources>

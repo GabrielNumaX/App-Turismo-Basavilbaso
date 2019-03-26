@@ -24,6 +24,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:gravity="center"
         android:text="@string/txtAlojamientos"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
@@ -454,6 +455,7 @@
                 android:layout_height="37dp"
                 android:background="@color/colorPrimary"
                 android:contentDescription="@string/app_name"
+                android:onClick="llamarBungTermas"
                 app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
             <Space
@@ -505,6 +507,7 @@
                 android:layout_height="37dp"
                 android:background="@color/colorPrimary"
                 android:contentDescription="@string/app_name"
+                android:onClick="llamarCampPoli"
                 app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
             <Space
