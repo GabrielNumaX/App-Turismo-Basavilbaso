@@ -32,491 +32,511 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TableLayout
-        android:id="@+id/tableLayout"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_height="447dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981">
+        app:layout_constraintVertical_bias="1.0">
 
-        <TableRow
-            android:id="@+id/TableRow"
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="@android:dimen/app_icon_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.981"
+            tools:ignore="UselessParent">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/txtHotel5"
+            <TableRow
+                android:id="@+id/TableRow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:text="@string/txtHotel5Soles"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/dirHotel5"
+                <TextView
+                    android:id="@+id/txtHotel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/txtHotel5Soles"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dirHotel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDirHotel5Soles"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallHotel5"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamar5Soles"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="5dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDirHotel5Soles"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <ImageButton
-                android:id="@+id/btnCallHotel5"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamar5Soles"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
+                <TextView
+                    android:id="@+id/txtHotelRob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtHotelRobert"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        </TableRow>
+                <TextView
+                    android:id="@+id/dirHotelRob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDirHotelRobert"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-        <View
-            android:layout_height="5dp"
-            android:background="@android:color/transparent" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <ImageButton
+                    android:id="@+id/btnCallHotelRob"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarRobertito"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
-            <TextView
-                android:id="@+id/txtHotelRob"
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="5dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtHotelRobert"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/dirHotelRob"
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDelOeste"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDirDelOeste"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallDelOeste"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarDelOeste"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="5dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDirHotelRobert"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDelSol"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-            <ImageButton
-                android:id="@+id/btnCallHotelRob"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarRobertito"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDirDelSol"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-        </TableRow>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <View
-            android:layout_height="5dp"
-            android:background="@android:color/transparent" />
+                <ImageButton
+                    android:id="@+id/btnCallDelSol"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarDelSol"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+            </TableRow>
 
-            <TextView
-                android:id="@+id/textView3"
+            <View
+                android:layout_height="5dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDelOeste"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView4"
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtMBurucuya"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDirMBurucuya"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallMBuru"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarMBurucuya"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="5dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDirDelOeste"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <ImageButton
-                android:id="@+id/btnCallDelOeste"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarDelOeste"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtElTala"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        </TableRow>
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDirElTala"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-        <View
-            android:layout_height="5dp"
-            android:background="@android:color/transparent" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btnCallElTala"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarElTala"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView5"
+            </TableRow>
+
+            <View
+                android:layout_height="5dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDelSol"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView6"
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtElNe"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDirElNe"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallElNe"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarElNe"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="5dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDirDelSol"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <ImageButton
-                android:id="@+id/btnCallDelSol"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarDelSol"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtBungTermas"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        </TableRow>
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDirBungTermas"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-        <View
-            android:layout_height="5dp"
-            android:background="@android:color/transparent" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btnCallBung"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarBungTermas"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView7"
+            </TableRow>
+
+            <View
+                android:layout_height="5dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtMBurucuya"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDirMBurucuya"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtCampPoli"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <ImageButton
-                android:id="@+id/btnCallMBuru"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarMBurucuya"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDirCampPoli"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        </TableRow>
+                <ImageButton
+                    android:id="@+id/btnCallCampPoli"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarCampPoli"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
-        <View
-            android:layout_height="5dp"
-            android:background="@android:color/transparent" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtElTala"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDirElTala"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallElTala"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarElTala"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-        </TableRow>
-
-        <View
-            android:layout_height="5dp"
-            android:background="@android:color/transparent" />
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtElNe"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDirElNe"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallElNe"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarElNe"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-        </TableRow>
-
-        <View
-            android:layout_height="5dp"
-            android:background="@android:color/transparent" />
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtBungTermas"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDirBungTermas"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallBung"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarBungTermas"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-        </TableRow>
-
-        <View
-            android:layout_height="5dp"
-            android:background="@android:color/transparent" />
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtCampPoli"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDirCampPoli"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallCampPoli"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarCampPoli"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-        </TableRow>
+            </TableRow>
 
 
-    </TableLayout>
+        </TableLayout>
+
+         </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

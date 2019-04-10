@@ -31,513 +31,535 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TableLayout
-        android:id="@+id/tableLayout"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="422dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_height="447dp"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="@android:dimen/app_icon_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981">
+        app:layout_constraintVertical_bias="1.0">
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/txtBomberos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:text="@string/txtBomberos"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/telBomberos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telBomberos"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallBomberos"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarBomberos"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-        </TableRow>
-
-
-        <View
-            android:layout_height="7dp"
-            android:background="@android:color/transparent" />
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/txtCorreo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtCorreo"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/telCorreo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telCorreo"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallCorreo"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarCorreo"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-        </TableRow>
-
-        <View
-            android:layout_height="7dp"
-            android:background="@android:color/transparent" />
-
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtHospital"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telHospital"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallHospital"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarHospital"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <View
-            android:layout_height="7dp"
-            android:background="@android:color/transparent" />
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtMunicipalidad"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telMunicipalidad"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallMunicipalidad"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/txtMunicipalidad"
-                android:onClick="llamarMuni"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <View
-            android:layout_height="7dp"
-            android:background="@android:color/transparent" />
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtPolicia"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telPolicia"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallPolicia"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/txtPolicia"
-                android:onClick="llamarPolicia"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <View
-            android:layout_height="7dp"
-            android:background="@android:color/transparent" />
-
-        <TableRow
+        <TableLayout
+            android:id="@+id/tableLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center">
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="@android:dimen/app_icon_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.981"
+            tools:ignore="UselessParent">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/textView9"
+            <TableRow
+                android:id="@+id/TableRow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txtpolideport"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView10"
+                <TextView
+                    android:id="@+id/txtBomberos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/txtBomberos"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/telBomberos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telBomberos"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallBomberos"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarBomberos"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+
+            <View
+                android:layout_height="7dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtCorreo"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/telCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telCorreo"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallCorreo"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarCorreo"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="7dp"
+                android:background="@android:color/transparent" />
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtHospital"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telHospital"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallHospital"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarHospital"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <View
+                android:layout_height="7dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtMunicipalidad"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telMunicipalidad"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallMunicipalidad"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/txtMunicipalidad"
+                    android:onClick="llamarMuni"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <View
+                android:layout_height="7dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtPolicia"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telPolicia"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallPolicia"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/txtPolicia"
+                    android:onClick="llamarPolicia"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <View
+                android:layout_height="7dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtpolideport"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telpolideport"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallPolidep"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/txtpolideport"
+                    android:onClick="llamarPolidep"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <View
+                android:layout_height="7dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtBoleteria"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telBoleteria"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/btnCallFlecha"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/txtBoleteria"
+                    android:onClick="llamarFlecha"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <View
+                android:layout_height="7dp"
+                android:background="@android:color/transparent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtRemises"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <View
+                android:layout_height="7dp"
+                android:background="@android:color/transparent" />
+
+            <!--aca va servicentro-->
+            <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/telpolideport"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <ImageButton
-                android:id="@+id/btnCallPolidep"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/txtpolideport"
-                android:onClick="llamarPolidep"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
+                <TextView
+                    android:id="@+id/txtServicentro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/txtServicentro"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-        </TableRow>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <View
-            android:layout_height="7dp"
-            android:background="@android:color/transparent" />
+                <TextView
+                    android:id="@+id/telServicento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telServicentro"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <ImageButton
+                    android:id="@+id/btnCallServicentro"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarServicentro"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
-            <TextView
-                android:id="@+id/textView11"
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+
+            <View
+                android:layout_height="7dp"
+                android:background="@android:color/transparent" />
+
+            <!--aca va servife-->
+
+            <TableRow
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/txtBoleteria"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:gravity="center">
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telBoleteria"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/txtServife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/txtServife"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <ImageButton
-                android:id="@+id/btnCallFlecha"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/txtBoleteria"
-                android:onClick="llamarFlecha"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
+                <TextView
+                    android:id="@+id/telServife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telServife"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-        </TableRow>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-        <View
-            android:layout_height="7dp"
-            android:background="@android:color/transparent" />
+                <ImageButton
+                    android:id="@+id/btnCallServife"
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:background="@color/colorPrimary"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="llamarServife"
+                    app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
 
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
+            </TableRow>
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/txtRemises"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+        </TableLayout>
 
-        </TableRow>
-
-        <View
-            android:layout_height="7dp"
-            android:background="@android:color/transparent" />
-
-        <!--aca va servicentro-->
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/txtServicentro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:text="@string/txtServicentro"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/telServicento"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telServicentro"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallServicentro"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarServicentro"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-        </TableRow>
-
-
-        <View
-            android:layout_height="7dp"
-            android:background="@android:color/transparent" />
-
-        <!--aca va servife-->
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/txtServife"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:text="@string/txtServife"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/telServife"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telServife"
-                android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-            <ImageButton
-                android:id="@+id/btnCallServife"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:background="@color/colorPrimary"
-                android:contentDescription="@string/app_name"
-                android:onClick="llamarServife"
-                app:srcCompat="@android:drawable/stat_sys_phone_call" />
-
-            <Space
-                android:layout_width="10dp"
-                android:layout_height="wrap_content" />
-
-        </TableRow>
-
-    </TableLayout>
+    </LinearLayout>
+</ScrollView>
 
 </android.support.constraint.ConstraintLayout>
